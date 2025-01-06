@@ -7,6 +7,33 @@
 </head>
 <body>
     <h1 onclick="getUserGrades()">Click to get your grades</h1>
-    <script src="lab1.js"></script>
+    <script>
+        // console.log("----------------Question 5---------------------------------");
+        //Question 5
+
+        function getUserGrades()
+        {
+            var username=prompt("Please enter your name:");
+            while(!username) 
+            {
+                alert("name is required.");
+                username=prompt("please enter your name:");
+            }
+            var grades=prompt("please enter your grades separated by commas:");
+            while(!grades) 
+            {
+                alert("grades are required.");
+                grades=prompt("please enter your grades separated by commas:");
+            }
+            var gradesArray=grades.split(',').map(Number);
+            console.table(gradesArray);
+
+            var total=gradesArray.reduce((sum,grade)=>sum+grade,0);
+            var average=total/gradesArray.length;
+            console.log("Average grade:"+average);
+            alert("Welcome To The Program, "+username+"!");
+            alert("Average grade:"+average);
+        }
+    </script>
 </body>
 </html>
