@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hangman Game</title>
+    <link rel="stylesheet" href="stylesheet.css">
+</head>
+<body>
+    <div id="game-container">
+        <div id="category-container">
+            <h2 class="category">Choose a category:</h2>
+            <br>
+            <button onclick="startGame('Animals')">Animals</button>
+            <button onclick="startGame('Movies')">Movies</button>
+            <button onclick="startGame('Countries')">Countries</button>
+        </div>
+
+        <div class="parent">
+            <button id="goback" onclick="goBack()">GO BACK</button>
+            <div id="hangman">
+                <pre id="hangman-content">
+                </pre>
+
+            </div>
+            <div id="game-interface">
+                <h2 class="category" id="category">Category : </h2>
+                <p id="word-display"> </p>
+                
+                <h3 id="letters"> </h3>
+
+                <p>
+                    <img src="lives.jpg" width="20px" height="12px"> 
+                    <span id="remaining-lives">Lives: 6</span>
+                </p>
+                <p id="time-left"> </p>
+                <div id="input">
+                    <input type="text" id="guess" placeholder="Enter a letter">
+                    <button onclick="submitGuess()">Guess</button>
+                    <button id="hint" onclick="getHint()">Hint</button>
+                </div>
+                <p id="message"> </p>
+                <p id="hintMessage"> </p>
+            </div>
+        </div>    
+    </div>
+    <script src="script.js">
+    </script>
+</body>
+</html>

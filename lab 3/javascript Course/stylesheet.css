@@ -1,0 +1,76 @@
+
+body
+{
+    background-image:url('hangmanBG.jpg');
+    background-size:cover;
+}
+
+#game-container
+{
+    margin: 100px auto;
+    padding: 20px;
+    border: 2px solid #ccc;
+    border-radius: 15px;
+    background: #fff;
+    width:70%;
+    text-align:center;
+    box-shadow:8px 8px 20px 12px #050505ed;
+
+}
+
+#lives{
+    display:flex;
+}
+
+#time-left
+{
+    color: red;
+}
+
+input 
+{
+    padding: 10px;
+    border:1px solid #ccc;
+    border-radius:4px;
+}
+
+button 
+{
+    padding:10px;
+    font-size: 16px;
+    color: white;
+    background-color:#007BFF;
+    border: none;
+    border-radius: 4px;
+}
+
+#message {
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+#hint{
+    background-color: #ff9900;
+    margin-left: 5px;
+}
+.parent{
+    display: flex;
+}
+#game-interface {
+    width: 60%;
+    display: none;
+}
+#hangman
+{
+    width:40%;
+    display: none;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+#goback{
+    background-color: #a7a6a5;
+    margin-left: 5px;
+    display:none;
+}
