@@ -1,0 +1,108 @@
+
+body
+{
+    background-image:url('bg.webp');
+    background-size:cover;
+}
+
+#game-container
+{
+    padding: 20px;
+    border: 2px solid #ccc;
+    border-radius: 15px;
+    background: #fffffff3;
+    width:70%;
+    text-align:center;
+    box-shadow:8px 8px 20px 12px #050505ed;
+    margin-left:10%;
+}
+
+#category-container
+{
+    justify-content:center;
+    align-items: center;
+    margin:100px auto;
+}
+
+#lives{
+    display:flex;
+}
+
+#time-left
+{
+    color: rgb(30, 182, 0);
+    font-weight: bold;
+}
+
+input 
+{
+    padding: 10px;
+    border:1px solid #ccc;
+    border-radius:4px;
+}
+
+button 
+{
+    padding:10px;
+    margin-left:10px;
+    font-size: 16px;
+    color: white;
+    background-color: #61995ac9;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#message {
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+#hint{
+    color: #b4ffaac9;
+    background-color: #000000e5;
+    margin-left: 5px;
+    width:25%;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+#hint:hover{
+    background-color: #61995ac9;
+    color: rgba(0, 0, 0, 0.884);
+    transform: scale(1.1);    
+}
+.parent{
+    display: none;
+    justify-content: center;
+}
+
+#hangman
+{
+    font-size: 14px;
+    font-weight: bold;
+}
+
+#letters button 
+{
+    background-color: #a7a6a5bb;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+#letters button:hover 
+{    
+    background-color: #294126ea;
+    transform: scale(1.1);
+}
+
+#goback
+{
+    color: #b4ffaac9;
+    background-color: #000000e5;    
+    cursor: pointer;
+    margin-top:10px;
+    margin-right: 82%;
+    
+   
+}
+

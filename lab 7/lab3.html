@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Hangman Game</title>
+        <link rel="stylesheet" href="stylesheet.css">
+    </head>
+
+    <body>
+        <div id="game-container">
+            <div id="category-container">
+                <div id="game-name">
+                    <h1>Hangman</h1>
+                </div>
+
+                <h3 class="category">Choose a category:</h3>
+                <br>
+                <button onclick="startGame('Animals')">Animals</button>
+                <button onclick="startGame('Movies')">Movies</button>
+                <button onclick="startGame('Countries')">Countries</button>
+            </div>
+
+            <div class="parent">
+                
+                <div id="game-interface">
+
+                    <h2 class="category" id="category">Category : </h2>
+
+
+                    <div id="hangman">
+                        <pre id="hangman-content">
+                        </pre>
+                    </div>
+
+                    <p id="word-display"> </p>
+                    
+                    <h2 class="keyboard" id="letters"> </h2>
+
+                    <p>
+                        <span id="remaining-lives">Lives: 6</span>
+                    </p>
+                    <p id="time-left"> </p>
+                    <div id="input">
+                        <button id="hint" onclick="getHint()">Hint</button>
+                    </div>
+                    <p id="message"> </p>
+                    <p id="hintMessage"> </p>
+
+                    <button id="goback" onclick="goBack()">GO BACK</button>
+                </div>
+            </div>    
+        </div>
+        <script type="module" src="gui.js"></script>
+    </body>
+</html>
